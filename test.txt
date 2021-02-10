@@ -1,0 +1,35 @@
+chạy yarn start:dev
+
+slot1 create moudle cú pháp  
+introduce Module nest g m tasks @Module decorator
+Controller nest g controller cats @Controller
+services nest g services cats --no-spec @Injectable
+trong module có controller , provider trog provider có nhìu services để xử lý business logic 
+1.create tasks
+yarn add uuid 
+@Body("key") body 
+key là field của request send to sever, 
+body là value
+2.get task by id, update, delete
+@Get(/:id) 
+@Param('id')
+3.filter & search
+
+slot2: pipe: validator, Class validator
+npm i  class-validator class-transformer --save
+Custom pipes class implements PipeTransform 
+có 2 cách validate 1.ValidationPipe -  @IsNotEmpty()
+2. custome TaskStatusValidaionPipe
+https://github.com/typestack/class-validator    
+
+slot3: mongodb
+npm install --save @nestjs/mongoose mongoose
+yarn add mongoose@5.10.1
+
+slot 4 CRUD Person, Cats use Ref middleware cors helmet
+
+
+slot 5 authorization authentication
+
+npm install --save @nestjs/passport passport passport-local
+ yarn add @nestjs/passport passport passport-jwt 
